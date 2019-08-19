@@ -1,0 +1,31 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/ConsoleApp/bin/Debug/netcoreapp2.2/ConsoleApp.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/ConsoleApp",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "env": {
+                "CONSOLEAPP_ENVIRONMENT": "Development",
+                "intervalMs": "500",
+                "authentication__username": "env_user",
+                "authentication__password": "env_pass",
+            }
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:pickProcess}"
+        }
+    ]
+}
