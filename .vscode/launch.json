@@ -18,7 +18,23 @@
                 "CONSOLEAPP_ENVIRONMENT": "Development",
                 "intervalMs": "500",
                 "authentication__username": "env_user",
-                "authentication__password": "env_pass",
+                "authentication__password": "env_pass"
+            }
+        },
+        {
+            "name": "ConsoleAppAdvanced",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-ConsoleAppAdvanced",
+            "program": "${workspaceFolder}/ConsoleAppAdvanced/bin/Debug/netcoreapp2.2/ConsoleApp.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/ConsoleAppAdvanced",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "env": {
+                "CONSOLEAPP_ENVIRONMENT": "Development",,
+                "availableServers:0": "server1",
+                "availableServers:1": "server2",
             }
         },
         {

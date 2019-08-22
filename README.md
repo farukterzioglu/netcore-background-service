@@ -30,4 +30,9 @@ dotnet add package Microsoft.Extensions.Logging.Console
 ```
 
 10. Add serilog
+```
+dotnet add package Serilog.Extensions.Hosting
+dotnet add package Serilog.Sinks.Console
+dotnet add package Serilog.Settings.Configuration
+```
 11. Add collection config

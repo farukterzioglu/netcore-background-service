@@ -9,9 +9,14 @@ namespace ConsoleApp
     {
         private readonly AuthenticationSettings _authenticationSettings;
 
-        public Repository(IOptions<AuthenticationSettings> authenticationSettings)
+        // public Repository(IOptions<AuthenticationSettings> authenticationSettings)
+        // {
+        //     _authenticationSettings = (authenticationSettings ?? throw new ArgumentNullException(nameof(authenticationSettings))).Value;
+        // }
+
+        public Repository(AuthenticationSettings authenticationSettings)
         {
-            _authenticationSettings = (authenticationSettings ?? throw new ArgumentNullException(nameof(authenticationSettings))).Value;
+            _authenticationSettings = authenticationSettings ?? throw new ArgumentNullException(nameof(authenticationSettings));
         }
     }
 }
