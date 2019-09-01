@@ -1,3 +1,6 @@
+Related Article (TR) : https://medium.com/@farukterzioglu/net-core-i%CC%87le-arkaplan-servisler-572b5f7f5771  
+İlgili makate : https://medium.com/@farukterzioglu/net-core-i%CC%87le-arkaplan-servisler-572b5f7f5771  
+
 1. Create a console application
 2. Add requirements
 3. Setup Program.cs
